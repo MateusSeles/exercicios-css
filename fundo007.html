@@ -7,6 +7,9 @@
     <title>Alinhamento Vertical</title>
     <style>
         #container {
+            background-image: url(imagens/imgex022/target001.png);
+            background-size: 100% 100%;
+            position: relative;
             height: 500px;
             background-color: blueviolet;
             padding: 10px;
@@ -14,9 +17,19 @@
         }
 
         #conteudo {
+            background-image: url(imagens/imgex022/target001.png);
+            background-size: 100% 100%;
+            position: absolute;
             height: 200px;
+            width: 400px;
             background-color: yellow;
 
+            left: 50%;
+            top: 50%;
+
+            transform: translate(-50%, -50%);
+            
+            /* Pode mecher em left e top se a position for absolute */
         }
     </style>
 </head>
