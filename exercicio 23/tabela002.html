@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+            position: relative;
+
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        thead, tfoot {
+            background-color: grey;
+            color: white;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;  /*Pra deixar o titulo da tabela colado EFEITO */
+            background-color: grey;
+        }
+
+        .num {
+            text-align: right;
+        }
+
+        caption {
+            font-size: 1.2em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: rgb(189, 84, 63);
+        }
+
+        tbody tr:nth-child(2n) {  
+            /*Para zebrar a tabela
+            ODD >> pra mudar a cor par
+            EVEN >> impar */
+            background-color: lightgray;
+        }
+        
+        tbody > tr:nth-child(odd) {
+            background-color: rgba(63, 63, 239, 0.475);
+            font-weight: bold;
+        }
+
+        tbody > tr:nth-child(even) {
+            background-color: rgba(165, 61, 165, 0.534);
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<!-- CAPTION
+     THEAD
+        TR, TD, TH
+     TBODY
+        TR, TD, TH
+     TFOOT
+        TR, TD, TH
+        
+     TH > Titulo
+     TD > Dado
+    -->
+<body>
+    <h1>Uso de tabelas grandes</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 80px;">População</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <caption>Taxa de natalidade do Brasil</caption>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45 919 049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21 168 791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 264 943</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14 873 064</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="num">11 433 967</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">11 377 239</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td class="num">9 557 071</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td class="num">9 132 078</td>
+            </tr>
+            <tr>
+                <td>Pará</td>
+                <td class="num">8 602 865</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">7 164 788</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total de habitantes</th>
+                <td class="num"><strong>210 147 125</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+    <P>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione dolorem incidunt saepe sunt, 
+        non suscipit ipsa a ullam debitis soluta iste magni sequi vero illum. Blanditiis natus hic pr
+        ovident maxime. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto ullam quia ne
+        sciunt, minus velit voluptatum. Quos perspiciatis, reiciendis velit cum sapiente omnis illo s
+        ed quas atque repellendus ducimus aliquam expedita? Lorem ipsum dolor sit amet consectetur, a
+        dipisicing elit. Magni corporis quae voluptate, beatae quis deleniti odio excepturi, architect
+        o officia quos dolorem perferendis iste, ad maxime? Nisi facere soluta ut animi? Lorem, ipsum 
+        dolor sit amet consectetur adipisicing elit. Reiciendis modi praesentium qui cum cupiditate a
+        utem saepe ipsam ipsum aperiam ea, enim nemo corporis possimus voluptate aliquam perspiciatis.
+         Tenetur, cum quae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, fuga v
+         elit. Sint porro cumque reprehenderit, unde quidem quo enim, laborum dolore voluptatum a dolo
+         res est nostrum adipisci voluptatem, in reiciendis! Lorem ipsum dolor sit amet, consectetur a
+         dipisicing elit. Maxime, excepturi temporibus amet a ipsa voluptate aut dolores aspernatur et
+          quod eum illum quas facilis id! Maxime architecto qui excepturi quae! Lorem ipsum dolor sit am
+          et consectetur adipisicing elit. Rerum ad dolorem iure et minus officia officiis omnis optio n
+          ulla quisquam. Fuga iusto sed eveniet, dignissimos neque molestiae at ut nostrum! lore 
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil vel eum voluptate provident q
+        uisquam, iste error? Labore rerum harum iure, unde nesciunt vel magnam, consequuntur, incidunt
+         odio voluptas non modi. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto
+          rem animi voluptates mollitia rerum id dicta expedita voluptas adipisci, recusandae facere c
+          orporis quod iure culpa molestiae magnam inventore sed provident. Lorem ipsum dolor, sit amet
+           consectetur adipisicing elit. Assumenda aperiam totam autem officia excepturi aliquid veritati
+           s alias rerum qui, accusantium repellendus cum molestiae laborum rem illum maiores impedit mo
+           di. Pariatur? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem, consequuntur opti
+           o! Quaerat eos tempore nemo dolorem ea odit nostrum id, ipsum, saepe architecto, quas sapiente
+            praesentium recusandae suscipit sit explicabo. Lorem ipsum dolor sit amet, consectetur adipis
+            icing elit. Alias vero distinctio possimus facere provident, sint enim reprehenderit nulla dol
+            ore incidunt eum eos, laudantium aperiam optio corporis facilis, cumque odit doloremque! Lorem
+             ipsum dolor sit amet consectetur adipisicing elit. Et aperiam nisi dolorem maxime accusamus d
+             olores corporis doloremque reiciendis voluptatum? Eligendi, nisi aliquid? Quam, dolorem velit
+              rem sit modi porro autem? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere q
+              uibusdam reprehenderit distinctio error animi inventore corrupti dicta accusamus veniam ipsa
+               unde optio voluptatibus sit, corporis expedita alias consectetur eaque temporibus! Lorem ip
+               sum dolor sit amet consectetur, adipisicing elit. Neque ipsum cupiditate, reprehenderit, cu
+               mque aspernatur debitis sunt quasi ratione laboriosam nobis molestiae eos molestias enim re
+               pellat vitae expedita voluptates incidunt a.
+    </P>
+    
+</body>
+</html>
