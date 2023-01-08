@@ -7,20 +7,33 @@
     <title>Estudos de iframe</title>
     <style>
         iframe {
-            width: 500px;
+            width: 400px;
+            height: 400px;
         }
     </style>
 </head>
 <body>
     <h1>Testando o uso de um iframe</h1>
     <p>
+
+        <!-- Tamanho padrao 300 x 150 -->
         Acessando o site do
         
         <iframe
         src="https://mateusseles.github.io/Projeto-Cordel/" 
-        frameborder="0"></iframe>
+        frameborder="0" height="500">
+        
+        </iframe>
         
         para aprender a programar
+    </p>
+    <p>
+        O Projeto Cordel do Mateus 
+        <!--Scolling é pra deixar rolar a tela, yes, no , auto
+            Frameborder so aceita 0 e 1, pra fazer o border de 1 px solid black-->
+        <iframe src="https://mateusseles.github.io/Projeto-Cordel/"
+        frameborder="0" height="500" width="500" scolling="yes"></iframe>
+        no <a href="https://mateusseles.github.io/Projeto-Cordel/">GitHub</a>
     </p>
 </body>
 </html>
