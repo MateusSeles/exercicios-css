@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 4</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 20px;  
+        }
+
+        table {        
+            border-collapse: collapse;
+            box-shadow: 1px 1px 1px 1px black;
+            text-align: center;
+        }
+
+        caption {
+            font-size: 1.2em;
+            font-weight: bolder;
+            padding: 20px;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+            
+        }
+
+        thead {
+            background-color: grey;
+            font-weight: bold;
+            color: white;
+        }
+
+        .total {
+            background-color: grey;
+            color: white;
+            font-weight: bold;
+        }
+
+        col.coluna1 {
+            background-color: chartreuse;
+        }
+
+        col.coluna2 {
+            background-color: aquamarine;
+        }
+
+        col.coluna3 {
+            background-color: rgb(42, 232, 42);
+        }
+
+        col.coluna4 {
+            background-color: rgb(235, 14, 235);
+        }
+
+        col.coluna5 {
+            background-color: rgb(255, 72, 72);
+        }
+
+        div {
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Desafio 4</h1>
+    <caption>Desafio 4</caption>
+    <div id="container">
+        <table>
+            <colgroup>
+                <col class="coluna1">
+                <col class="coluna2">
+                <col class="coluna3">
+                <col class="coluna4">
+                <col class="coluna5">
+            </colgroup>
+            <thead>
+                <tr>
+                    <th rowspan="2" scope="col">Áreas</th>
+                    <th rowspan="2" scope="col">Disciplinas</th>
+                    <th colspan="2" scope="colgroup">Notas</th>
+                    <th rowspan="2" scope="col">Média</th>
+                </tr>
+                <tr>
+                    <th scope="col">Notas 1</th>
+                    <th scope="col">Notas 2</th>
+                </tr>
+            </thead>
+        <tbody>
+            <tr>
+                <th rowspan="4" scope="rowgroup">Exatas</th>
+                <td>Matemática</td>
+                <td>9.5</td>
+                <td>8.6</td>
+                <td>7.2</td>
+            </tr>
+            <tr>
+                <td>Física</td>
+                <td>9.2</td>
+                <td>8.7</td>
+                <td>10.0</td>
+            </tr>
+            <tr>
+                <td>Química</td>
+                <td>9.8</td>
+                <td>10.0</td>
+                <td>9.5</td>
+            </tr>
+            <tr>
+                <td>Biologia</td>
+                <td>8.0</td>
+                <td>8.5</td>
+                <td>8.5</td>
+            </tr>
+            <tr class="total">
+                <th colspan="4" scope="row">Média de Exatas</th>
+                <td>9.5</td>
+            </tr>
+            <tr>
+                <th rowspan="2" scope="rowgroup">Humanas</th>
+                <td>História</td>
+                <td>8.5</td>
+                <td>9.0</td>
+                <td>10.0</td>
+            </tr>
+            <tr>
+                <td>Geografia</td>
+                <td>8.0</td>
+                <td>9.0</td>
+                <td>9.5</td>
+            </tr>
+            <tr>
+                <th colspan="4" class="total" scope="row">Média de Humanas</th>
+                <td class="total">9.0</td>
+            </tr>
+        </tbody>
+        </table>
+    </div>
+    
+</body>
+</html>
