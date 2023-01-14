@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+/*Estilo para impressora */
+
+* {
+    margin: 10px;
+    padding: 10px;
+}
+
+html {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5em;
+    line-height: 1.5em;
+}
+
+menu {
+    display: none;
+}
+
+article {
+    width: 100%;
+}
+
+article::after {
+    font-size:xx-large;
+    content: 
+    'Esse arigo foi impressora através do site www.cursoemvideo.com';
+}
+
+
+/* Line heigth >> espaçamento entre linhas
+   Display none >> para tirar o menun a impressão */
